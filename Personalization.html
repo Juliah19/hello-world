@@ -1,0 +1,179 @@
+
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<html>
+
+<body>
+  <div class="container">
+      <div id="header">
+      <div id="logo"> <a href="index.html"> <img src="logo.png"> </a> </div>
+      <div id="social-links"> <a href="https://dribbble.com/juliamhotz" target="_blank"> <i class="fa fa-dribbble" aria-hidden="true"></i> </a>
+        <a href="https://www.linkedin.com/in/juliamhotz/" target="_blank"> <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
+      </div>
+    </div> <!--end header -->
+    <div class="row">
+      <div class="col-md-4">
+        <h1>Ecommerce Personalization</h1>     
+      </div>
+      <div class="col-md-8">
+        <h3>What the project is.</h3>
+        <p> 
+My team at SearchSpring wanted to provide ecommerce sites with the ability to personalize their shoppers experience on their site. Ecommerce retailers wanted to provide their shoppers with search results tailored to the individual shopper’s tastes and preferences. Our objective was to devise a method to discover shopper product preferences and provide an interface that informs end users that what preferences are being applied to search results. I had to iterate quickly and get concepts in front of users to test their validation. This experience helped me learn new design methodologies which refined my overall comprehension of experience design.
+<br>
+<br>
+<strong>Role:</strong>
+Product Designer</p>
+ </div>
+
+<div class="col-sm-12">
+   <img src="personalization/personalizationproto1.png">
+   <p class="caption">A screen from one of the high fidelity prototypes made for this project</p>
+     </div>
+     
+  <div class="col-test sm-auto">
+        <h3> Challenges we solved for</h3>
+        <p>
+Without historical data, how can we know what kinds of products a shopper has an affinity toward? <br>
+How can we provide end users with transparency and control of their data?
+
+
+<h3>Where I Contributed</h3><p>
+Creating wireframes based on concepts discussed with stakeholders and end users, creating Invision protypes to test with users, Drafting interview scripts, collecting and synthesizing qualitative data, refining designs based on feedback and data. 
+ </p>
+
+
+ <h2>Research and Ideation</h2>
+ <p> <strong>Taking out the guesswork: Implicit vs Explicit shopper preferences </strong> <br>
+
+The problem we faced was how to gather the data to deliver personalized results. One approach is to track shopper behavior to reveal patterns that could be used to present more relevant products to the shopper. 
+
+Engagement would measured by observing click activity and filters used on products. Common attributes between the clicked products and filters would determine the shoppers preferences. For example, if a shopper is looking at running shoes and consistently clicks on "Nike" and shoes that are black, we can conclude they have an affinity for shoes that are Nike or are black.</p>
+
+<p>This was ok in theory but in early internal testing we found that there were some snags with this solution. It takes time to generate enough behavioral data to confidently surface preferred products. Any data gathered would be noisy and we’d most likely require multiple shopping sessions to determine the true shoppers preferences.</p>
+
+
+<p>We then had the idea to supplement the implicitly gathered data by having the customer explicitly tell us what they like. I brainstormed multiple approaches for this idea. One approach was to give visibility into the already gathered implicit preferences and allow the user to edit them in a widget type interface. </p>
+
+<img src="personalization/questionnaire1.png">
+    <p class="caption s-bottom">Gathering explicit preferences in the search result page</p>
+
+<p><strong>Transparency and control </strong> <br>
+Something that was clear from early concept testing was that transparency into the personalization preferences was highly desirable.  Letting end users know that their shopping habits were being used to enhance their shopping experience was added to alleviate concerns about privacy and control over their data.
+</p>
+
+<div class="col-sm-12">
+   <img src="personalization/Wireframes.png">
+   <p class="caption">Example wireframes of the preferences editor for shoppers</p>
+   <img src="personalization/preferencesmodal.png">
+     </div>
+
+<h3>Testing</h3>
+
+<p>We made mockups of potential solutions and showed them to our customers. We conducted unmoderated user testing to validate the needs for some of the proposed features. 
+I created click-through prototypes of what a typical shopper experience could look like. Some questions that we answered through our testing:
+
+<ul>
+<li>How do end users feel about shopping preferences being tracked and exposed?</li>
+<li>Would modifying search results ease friction in online shopping and offer a better shopping experience?</li>
+<li>How does exposing the users shopping preferences fit into established patterns of online shopping?</li>
+</ul> </p>
+
+<img src="personalization/flowdiagram.png"><p class="caption">Screens from the Invision prototype</p>
+
+<p>
+<strong>What we learned from testing</strong> 
+<ul>
+  <li>The preferences editor looks like facets and its use is confusing</li>
+<li>Mixed feedback that the in-line questionnaire is intrusive or distracting from the products -  others say it would get lost or unnoticed</li>
+<li>Better product product recommendations would greatly complement (or even meet the needs) of personalization </li>
+<li>Nearly everyone expressed that detailed preferences editing could exist on separate page, in the account page, or dedicated modal.</li>
+</p>
+
+<img src="personalization/preferencefilters.png">
+    <p class="caption s-bottom">What is the difference between a preference and filter? Our testers couldn't tell and we had a hard time explaining :\ </p>
+
+<h3>Refinements based on Testing</h3>
+<p>
+The glaring problem with our prototype was that the preferences editor looked like a duplication of the filter options and was confusing for our testing participants.  To remedy this, our next iteration did away with the preferences editor and combined it with the current filters. Instead of outlining what preferences were surfaced we merely suggested filter options based on the shoppers' habits.  Similarly instead of rearranging the whole page of search results, only the top three slots were allotted for personalized results. We found that this latest approach kept the shopper immersed in the shopping experience as opposed to the preference editor which demanded too much attention as users were constantly scrolling back to the top of the page and making adjustments. 
+
+</p>
+    
+<img src="personalization/recommendations.png"><p class="caption">Recommended facet options and products based on product affinity</p>
+</div>
+
+
+<div class="col-test sm-auto">
+<h2>In Retro</h2>
+<p class="s-bottom">
+We took a long time with this project and worked with a lot of assumptions that were never fully validated. In the future, we could get these ideas in front of customers and stakeholders a lot sooner instead of barking up the wrong tree for so long.   
+
+We ultimately decided that the use of a front facing explicit preference gathering was not useful to small or specialized retailers who did not have regular shoppers. Ecommerce giants like Amazon, ebay etc. would be better suited for this kind of endeavor because they have regular shoppers visiting their site. A small number of our sites could leverage the product on their account page, but it was not enough to sustain the project from a business standpoint. </p>
+</div>
+
+
+</div><!-- end row -->
+<div class="row">
+<div class="col-test sm-auto">
+
+ <h2 class="next-project-header">Next Project</h2>
+
+<div class="feature">
+        <div class="img-container left-img-nxt">
+          <a href="redesign.html"><img class="img-fluid" src="smc/styled.png"></a>
+        </div>
+        <div class="feature-text-nxt right-text-nxt">
+          <h1>SearchSpring Redesign</h1>
+          <h3>Designing for better usability & consistency</h3>
+          <p class="s-bottom">UI design, User testing, Design Systems, Visual design, Wireframing, Prototyping </p>
+            
+              <a href="redesign.html" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+
+</div>
+      </div> <!-- end row-->
+  </div> <!-- end container-->
+  <div class="container-fluid footer">
+    <div class="row">
+      <div class="col-md-6">
+        <h2> Thanks for Looking </h2>
+
+        <p> About Me <br> <br> I like to work with humans to designs solutions that work for other humans. When I’m not working on designs, I enjoy video gaming, saving interior decoring ideas to pinterest, gardening, being a cat owner, doing DIY stuff, being
+          snobby about coffee </p>
+
+      </div>
+
+    </div>
+    <!-- end row-->
+    <div class="row">
+      <div class="col-md-3">
+        <h3 class="s-bottom">Work Experience </h3>
+       <p class="s-bottom"><strong>SearchSpring</strong> <br> Product Designer 2016 - present</p>
+        <p class="s-bottom"><strong>HW Home</strong><br> Junior Designer  2016</p>
+
+      </div>
+
+      <div class="col-md-3">
+        <h3 class="s-bottom"> Education </h3>
+        <p class="s-bottom"> <strong>University of Colorado Denver</strong> <br>BFA in Digital Design 2015 </p>
+        <p class="s-bottom">
+          <strong> Danish Institute for Study Abroad</strong><br> 2014 </p>
+      </div>
+   
+     
+    </div> <!-- end row-->
+    
+    <div class="row m-top">
+     <div class="col-md-6">
+        
+        <a class="btn btn-link s-right" href="mailto:juliamhotz19@gmail.com">Contact Me</a> 
+        <a class="btn btn-link down-arrow" href="resume.pdf" target="_blank">View Resume</a>
+      </div>
+    </div>
+  </div>
+</html>
