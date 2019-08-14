@@ -364,6 +364,11 @@ mark {
 .fa{
   font-size: 2em;
 }
+  
+p{
+font-size: 2.5em;
+line-height: 1.5em
+}
 
 }
 
