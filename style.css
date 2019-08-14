@@ -352,10 +352,6 @@ mark {
   margin-bottom: 5vh;
 }
 
-.sm-auto {
-  max-width: 100%;
-}
-
 }
 @media only screen and (max-device-width: 480px) {
 .row {
