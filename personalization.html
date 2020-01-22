@@ -1,4 +1,3 @@
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
@@ -25,7 +24,10 @@
       <div class="col-md-8">
         <h3>What the project is.</h3>
         <p> 
-My team at SearchSpring wanted to provide ecommerce sites with the ability to personalize their shoppers experience on their site. Ecommerce retailers wanted to provide their shoppers with search results tailored to the individual shopper’s tastes and preferences. Our objective was to devise a method to discover shopper product preferences and provide an interface that informs end users that what preferences are being applied to search results. I had to iterate quickly and get concepts in front of users to test their validation. This experience helped me learn new design methodologies which refined my overall comprehension of experience design.
+Ecommerce retailers wanted to provide their shoppers with search results tailored to the individual shopper’s tastes and preferences. Our objective was to devise a method to discover shopper product preferences and provide an interface that informs end-users that what preferences are being applied to search results. I had to iterate quickly and get concepts in front of users to test their validity. 
+<br>
+Users who installed personalization on their site saw an average 2% lift in conversion rate over 3 months. 
+
 <br>
 <br>
 <strong>Role:</strong>
@@ -50,34 +52,60 @@ Creating wireframes based on concepts discussed with stakeholders and end users,
 
 
  <h2>Research and Ideation</h2>
- <p> <strong>Taking out the guesswork: Implicit vs Explicit shopper preferences </strong> <br>
+ <p> <strong>Building a Shopper Profile</strong> <br>
 
-The problem we faced was how to gather the data to deliver personalized results. One approach is to track shopper behavior to reveal patterns that could be used to present more relevant products to the shopper. 
+Without any historical data on a shopper, how can we figure out what product types they have an affinity towards? We decided to tackle this by using scripts that would track shopping behavior and build a profile for the individual shopper. We would track product clicks, search queries, and filters used in order to glean shopper preferences. Search results would then be personalized based on the shopper profile. </p>
 
-Engagement would measured by observing click activity and filters used on products. Common attributes between the clicked products and filters would determine the shoppers preferences. For example, if a shopper is looking at running shoes and consistently clicks on "Nike" and shoes that are black, we can conclude they have an affinity for shoes that are Nike or are black.</p>
+<p>The problem we faced was how to gather the data to deliver personalized results. One approach is to track shopper behavior to reveal patterns that could be used to present more relevant products to the shopper. Engagement would be measured by observing click activity and filters used on products. Common attributes between the clicked products and filters would determine the shopper’s preferences. For example, if a shopper is looking at running shoes and consistently clicks on "Nike" and shoes that are black, we can conclude they have an affinity for shoes that are Nike or are black.</p>
 
-<p>This was ok in theory but in early internal testing we found that there were some snags with this solution. It takes time to generate enough behavioral data to confidently surface preferred products. Any data gathered would be noisy and we’d most likely require multiple shopping sessions to determine the true shoppers preferences.</p>
-
-
-<p>We then had the idea to supplement the implicitly gathered data by having the customer explicitly tell us what they like. I brainstormed multiple approaches for this idea. One approach was to give visibility into the already gathered implicit preferences and allow the user to edit them in a widget type interface. </p>
 <img src="personalization/implicitgathering.png">
 </div>
 
-<div class="col-sm-12">
-   <img src="personalization/questionnaire1.png">
-  <img src="personalization/questionnaire2.png">
-    <p class="caption s-bottom">Gathering explicit preferences in the search result page</p>
-    
+<div class="col-sm-12 sm-auto">
+   
+  
+<p><strong>Transparency and control</strong> <br>
+Something that was clear from early concept testing was that transparency into the personalization preferences was highly desirable. Letting end users know that their shopping habits were being used to enhance their shopping experience was added to alleviate concerns about privacy and control over their data. </p>
 
-<p class="sm-auto"><strong>Transparency and control </strong> <br>
-Something that was clear from early concept testing was that transparency into the personalization preferences was highly desirable.  Letting end users know that their shopping habits were being used to enhance their shopping experience was added to alleviate concerns about privacy and control over their data.
+<p>What I came up with was a widget-type interface that would sit above the search results. The interface could collapse and expand to reveal the shopper’s personalization profile. Users could have the option of editing their preferences or turning off personalization altogether. 
 </p>
 
-
+</div> 
+<div class="col-sm-12">
    <img src="personalization/wireframes.png">
    <p class="caption">Example wireframes of the preferences editor for shoppers</p>
    <img src="personalization/preferencesmodal.png">
-     </div>
+   <img src="personalization/mobile.png">
+   <p class="caption">Exlporing the mobile shopping experience with personalization</p>
+
+</div>
+
+<div class="col-sm-12 sm-auto">
+<p class="sm-auto"><strong>Internal testing using the shopper profile</strong> <br>
+I worked with our front end developers to build a functional prototype so we could simulate a shopping journey using personalization. We leveraged multiple touchpoints to build a shopper profile and personalize the search results and we found that it took multiple shopping sessions to confidently surface shopper preferences. </p><br>
+<h3>Summary of findings from internal testing</h3>
+ <strong>Findings</strong>
+<ul>
+  <li>Noisy, unreliable data</li>
+  <li>Multiple shopping session may be needed to surface preferences
+</li>
+</ul>
+<strong>Possible Solution</strong>
+<p> Supplement implicit data with explicit data. Asking users their preferences with in-line questions </p>
+
+<br>
+<br>
+<p><strong>Taking out the guesswork: Implicit vs Explicit shopper preferences</strong>Using the tracking scripts to build the shopper profile was ok in theory but in early testing, we found that there were some snags with this solution. It takes time to generate enough behavioral data to confidently surface preferred products. Any data gathered would be noisy and we’d most likely require multiple shopping sessions to determine the true shopper’s preferences. <br><br>
+We then had the idea to supplement the implicitly gathered data by having the customer explicitly tell us what they like. I brainstormed multiple approaches for this idea. In addition to giving visibility to shopper’s preferences, we could supplement the shopping experience with in-line questionnaires that would augment their shopper profile. 
+</p>
+
+</div>
+
+<div class="col-sm-12">
+
+  <img src="personalization/questionnaire2.png">
+    <p class="caption s-bottom">Gathering explicit preferences in the search result page</p>
+</div>
 
 <div class="col-test sm-auto">
 
@@ -119,14 +147,14 @@ The glaring problem with our prototype was that the preferences editor looked li
 
 <div class="col-test sm-auto">
 
-</div>
+
 <h2>In Retro</h2>
 <p class="s-bottom">
 We took a long time with this project and worked with a lot of assumptions that were never fully validated. In the future, we could get these ideas in front of customers and stakeholders a lot sooner instead of barking up the wrong tree for so long.   
 
 We ultimately decided that the use of a front facing explicit preference gathering was not useful to small or specialized retailers who did not have regular shoppers. Ecommerce giants like Amazon, ebay etc. would be better suited for this kind of endeavor because they have regular shoppers visiting their site. A small number of our sites could leverage the product on their account page, but it was not enough to sustain the project from a business standpoint. </p>
 </div>
-
+</div>
 
 </div><!-- end row -->
 <div class="row">
